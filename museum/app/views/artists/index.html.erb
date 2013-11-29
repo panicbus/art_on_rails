@@ -1,0 +1,25 @@
+
+  <h1 style="margin-left: 5%">All of the Artists</h1>
+  <p>
+    <div id="paintings_index_list" class="">
+    <% @artists.each do |artist| %>
+      <ul class="list-group">
+      <li id="panel_list_head" class="list-group-item"><%= artist.name %></li>
+      <li class="list-group-item"><%= artist.nationality %></li>
+      <li class="list-group-item"><%= artist.dob %></li>
+      <li class="list-group-item"><%= artist.period %></li>
+      <li class="list-group-item"><img class="img-thumbnail" style="height:150px; width:auto" src="<%= artist.image %>"></li>
+      </ul>
+      <% end %>
+
+    <p>
+
+
+<ul id="index_nav_footer" class="nav nav-pills">
+  <li style="width: 450px"><a href="/artists/new">Submit a new artist.</a></li>
+  <li style="width: 450px"><a href="/paintings/new">Submit a painting.</a></li>
+  <p>
+
+  <li style="width: 45%"><a href="/">Back to home.</a></li>
+</ul>
+</div>

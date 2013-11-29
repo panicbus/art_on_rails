@@ -1,0 +1,36 @@
+<!--
+<form method="post" action="/artists/create">
+  <input type="text" name="artist_name" placeholder="Artist"/></br>
+  <input type="text" name="artist_nationality" placeholder="Nationality"/></br>
+  <input type="text" name="artist_dob" placeholder="Year of birth"/></br>
+  <input type="text" name="artist_period" placeholder="Style"/></br>
+  <input type="url" name="artist_image" placeholder="Image URL"/></br>
+  <input type="Submit">
+</form> --> -->
+
+<div id="painting_submit_container">
+<h1 style="font-family: Poiret One">Submit a new Artist</h1>
+  <form method="post" action="/artists/create" role="form">
+    <div class="form-group">
+    <label for="name">Artists name</label>
+        <input style="width: 100%" type="text" name="artist_name" id="name" placeholder="Name"/>
+      </div>
+    <div class="form-group">
+    <label for="nationality">Artist's Nationality</label>
+      <input style="width: 100%" type="text" name="artist_nationality" id="nationality" placeholder="Nationality"/>
+    </div>
+    <div class="form-group">
+    <label for="dob">Artist's Date of Birth</label>
+      <input style="width: 100%" type="text" id="dob" name="artist_dob" placeholder="DOB"/>
+    </div>
+    <div class="form-group">
+    <label for="period">Artist's Period</label>
+      <input style="width: 100%" type="text" id="period" name="artist_period" placeholder="Period"/>
+    </div>
+    <div class="form-group">
+    <label for="image">Insert the artist's portrait for the database</label>
+      <input style="width: 100%" type="text" id="image" name="artist_image" placeholder="Image URL"/>
+    </div>
+    <input type="Submit" value="Add Artist" />
+  </form>
+</div>

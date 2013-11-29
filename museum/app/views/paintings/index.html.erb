@@ -1,0 +1,23 @@
+<!-- <div id="index_container"> -->
+  <h1 style="margin-left: 5%">All of the Paintings</h1>
+  <p>
+  <div id="paintings_index_list" class="">
+  <% @paintings.each do |painting| %>
+    <ul class="list-group">
+      <li id="panel_list_head" class="list-group-item"><%= painting.title %></li>
+      <li class="list-group-item"><%= painting.year %></li>
+      <li class="list-group-item"><%= painting.style %></li>
+      <li class="list-group-item"><img class="img-thumbnail"style="height:150px; width:auto" src="<%= painting.image %>"></li>
+    </ul>
+    <% end %>
+  <!-- </div> -->
+
+  <p>
+  <!-- <div class="list-group"> -->
+    <a class="list-group-item" href="/paintings/new">Submit a new painting.</a>
+    <a class="list-group-item" href="/artists/new">Submit an artist.</a>
+    <br>
+
+    <a class="list-group-item" href="/">Back to home.</a>
+  </div>
+</div>

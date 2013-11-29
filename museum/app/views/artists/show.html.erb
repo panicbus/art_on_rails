@@ -1,0 +1,15 @@
+<h1>You submitted <%= @artist.name %> to Arty on Rails.</h1>
+<h3>Thank you!</h3>
+<div id="container">
+  <div id="artist_display">
+    <%= @artist.name %><br>
+    <%= @artist.nationality %><br>
+    <%= @artist.dob %><br>
+    <%= @artist.period %><br>
+    <img class="img-rounded" style="height:250px; width:auto" src="<%= @artist.image %>">
+  </div>
+  <p>
+  <%= link_to "Check out all the artists in the database", artists_path %><br>
+  <%= link_to "Check out the paitings in the database", paintings_path %>
+
+</div>

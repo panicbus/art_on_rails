@@ -1,0 +1,28 @@
+<div id="painting_submit_container">
+<h1 style="font-family: Poiret One">Submit a new painting</h1>
+<!-- <div id="submit_form" class="form-group"> -->
+  <form method="post" action="/paintings/create" role="form">
+    <div class="form-group">
+    <label for="title">Painting Title</label>
+        <input style="width: 100%" type="text" name="painting_title" id="title" placeholder="Title"/>
+      </div>
+    <div class="form-group">
+    <label for="year">Year Painted</label>
+      <input style="width: 100%" type="text" name="painting_year" id="year" placeholder="Year"/>
+    </div>
+    <div class="form-group">
+    <label for="medium">Painting Medium</label>
+      <input style="width: 100%" type="text" id="medium" name="painting_medium" placeholder="Medium"/>
+    </div>
+    <div class="form-group">
+    <label for="style">Painting Style</label>
+      <input style="width: 100%" type="text" id="style" name="painting_style" placeholder="Genre"/>
+    </div>
+    <div class="form-group">
+    <label for="image">Insert an image for the database</label>
+      <input style="width: 100%" type="text" id="image" name="painting_image" placeholder="Your image URL"/>
+    </div>
+    <input type="Submit" value="Add Painting" />
+  </form>
+</div>
+
